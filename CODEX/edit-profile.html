@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - DreamPath</title>
+    <link rel="stylesheet" href="EditProfile.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="DreamPath Logo" class="logo-img">
+            <h1>Edit Profile</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="dashboard.html" class="button">Dashboard</a></li>
+                <li><a href="logout.html" class="button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Edit Profile Section -->
+    <main>
+        <section id="edit-profile">
+            <h2>Update Your Information</h2>
+            <form action="update_profile.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" value="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" value="john.doe@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter new password">
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="profile-image">Profile Image</label>
+                    <input type="file" id="profile-image" name="profile-image" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn-submit">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 DreamPath. Built to inspire.</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/project-folder
+  ├── index.html               (Main Dashboard)
+  ├── view-profile.html        (Profile Page)
+  ├── view-analytics.html      (Analytics Page)
+  ├── styles.css               (Shared Styles)
+  ├── profile-pic.png          (Profile Picture)
+  ├── logo.png                 (Logo)

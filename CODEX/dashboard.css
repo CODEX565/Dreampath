@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark theme background */
+    color: #fff; /* Text color to contrast the dark background */
+    line-height: 1.6;
+}
+
+a {
+    color: #847878; /* Accent color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #1d1d1d; /* Dark header to match the theme */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #857676; /* Accent color on hover */
+}
+
+/* Section Styles */
+.section {
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for sections */
+}
+
+/* Dashboard Section */
+#dashboard h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#dashboard p {
+    font-size: 1.2em;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+/* Dashboard Cards Layout */
+.dashboard-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for the cards */
+}
+
+/* Individual Card Style */
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    flex: 1 1 calc(30% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #292929;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #f05454;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Profile Section */
+#profile h2,
+#analytics h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+#profile p,
+#analytics p {
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+button.edit-profile-btn,
+button.view-analytics-btn {
+    background-color: #292929;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.edit-profile-btn:hover,
+button.view-analytics-btn:hover {
+    background-color: #f05454;
+}
+
+/* Footer */
+footer {
+    background-color: #1d1d1d; /* Dark footer to match header */
+    color: #ccc;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <h1>LifeHub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="view-task.html">Tasks</a></li>
+                <li><a href="view-profile.html">Profile</a></li>
+                <li><a href="view-analytics.html">Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Manage your tasks, profile, and analytics.</p>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+            <div class="card task-card">
+                <h3>Tasks</h3>
+                <p>View and update your tasks.</p>
+                <a href="view-task.html"><button class="task-btn">View Tasks</button></a>
+            </div>
+            <div class="card profile-card">
+                <h3>Profile</h3>
+                <p>View and update your profile.</p>
+                <a href="view-profile.html"><button class="profile-btn">View Profile</button></a>
+            </div>
+            <div class="card analytics-card">
+                <h3>Analytics</h3>
+                <p>Check your task completion statistics.</p>
+                <a href="view-analytics.html"><button class="analytics-btn">View Analytics</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section">
+        <h2>Your Profile</h2>
+        <p>Update your personal information and preferences.</p>
+        <button class="edit-profile-btn">Edit Profile</button>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="section">
+        <h2>Analytics</h2>
+        <p>View your progress and task completion statistics.</p>
+        <button class="view-analytics-btn">View Details</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LifeHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #f05454;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+/* Header */
+.main-header {
+    background-color: #202020;
+    color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Task View Page */
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+.task-card {
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.task-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.task-description {
+    margin-bottom: 20px;
+    animation: fadeInUp 1.7s ease-in-out;
+}
+
+.task-due-date, .task-status {
+    margin-bottom: 15px;
+    animation: fadeInUp 1.9s ease-in-out;
+}
+
+.status-complete {
+    color: #f05454;
+}
+
+.update-status-btn {
+    padding: 10px 20px;
+    background-color: #f05454;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.update-status-btn:hover {
+    transform: scale(1.05);
+    background-color: #ff6a6a;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    background-color: #202020;
+    color: #aaa;
+    padding: 15px 0;
+    margin-top: auto;
+    animation: slideInFromBottom 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
